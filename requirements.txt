@@ -1,0 +1,96 @@
+# ============================================
+# Requirements for Kinova Ball-Catching System
+# ============================================
+# Generated from conda environment: kinova
+# Python version: 3.10.13
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Note: Some packages (ROS2, kortex-api) require special installation.
+# See comments below.
+# ============================================
+
+# -----------------------------
+# Core Scientific Computing
+# -----------------------------
+numpy==1.26.4
+scipy==1.15.3
+matplotlib==3.10.3
+
+# -----------------------------
+# Computer Vision
+# -----------------------------
+opencv-python==4.6.0.66
+opencv-contrib-python==4.6.0.66
+pyrealsense2==2.56.5.9235          # Intel RealSense SDK
+pillow==11.0.0
+
+# -----------------------------
+# Robotics & Kinematics
+# -----------------------------
+drake==1.47.0                       # MIT Drake (MPC, kinematics, optimization)
+transforms3d==0.4.2                 # 3D transformations (quaternions, euler)
+
+# -----------------------------
+# Kinova Robot SDK
+# -----------------------------
+# Install via pip (requires Kinova Kortex SDK)
+kortex-api==2.6.0.post3
+protobuf==3.20.3                    # Required by kortex-api
+grpcio==1.74.0
+grpcio-tools==1.74.0
+
+# -----------------------------
+# Machine Learning (Optional)
+# -----------------------------
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
+scikit-learn==1.6.1
+
+# -----------------------------
+# 3D Visualization
+# -----------------------------
+open3d==0.19.0
+
+# -----------------------------
+# Configuration & Utilities
+# -----------------------------
+pyyaml==6.0.2
+imutils==0.5.4
+
+# -----------------------------
+# Jupyter / Development
+# -----------------------------
+ipykernel==6.29.5
+ipython==8.36.0
+
+# -----------------------------
+# Web / Dashboard (Optional)
+# -----------------------------
+plotly==6.1.1
+dash==3.0.4
+
+# ============================================
+# ROS2 Dependencies (install via apt/rosdep)
+# ============================================
+# These are NOT pip-installable. Install ROS2 Humble first:
+#   sudo apt install ros-humble-desktop
+#
+# ROS2 Python packages (provided by ROS2 installation):
+#   - rclpy
+#   - geometry_msgs
+#   - sensor_msgs
+#   - std_msgs
+#   - builtin_interfaces
+
+# ============================================
+# System Dependencies (install via apt)
+# ============================================
+# Intel RealSense:
+#   sudo apt install librealsense2-dkms librealsense2-utils
+#
+# OpenCV system libs:
+#   sudo apt install libopencv-dev
+

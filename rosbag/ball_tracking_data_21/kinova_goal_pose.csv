@@ -1,0 +1,2 @@
+timestamp_sec,timestamp_nanosec,frame_id,position_x,position_y,position_z,orientation_x,orientation_y,orientation_z,orientation_w,bag_timestamp_ns
+1764918875,797423889,base_link,0.576,-0.18345800168305593,0.75,0.0,0.0,0.0,1.0,1764918875797764408

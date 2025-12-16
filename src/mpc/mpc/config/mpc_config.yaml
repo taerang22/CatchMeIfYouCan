@@ -1,0 +1,43 @@
+control:
+  control_dt: 0.01    # [s] control loop period
+
+mpc:
+  a_max: 3.0          # [m/s^2] max accel in MPC
+  dt_nominal: 0.05
+  N_max: 40
+  w_terminal: 200.0
+  w_control: 1.0
+  min_T: 0.25         # [s] min time-to-go for MPC
+  max_T: 1.0          # [s] max time-to-go for MPC
+
+topics:
+  eef_pose: "/kinova/eef_pose"
+  eef_vel: "/kinova/eef/vel"
+  goal_pose: "/kinova/goal_pose"
+  joint_state: "/kinova/joint_states"
+  joint_cmd: "/kinova/joint_vel_cmd"
+  eef_twist_cmd: "/kinova/eef_twist_cmd"   # debug/logging only
+
+robot:
+  urdf_path: "./urdf/kinovaGen3.urdf"
+
+  joint_names:
+    - "joint_1"
+    - "joint_2"
+    - "joint_3"
+    - "joint_4"
+    - "joint_5"
+    - "joint_6"
+    - "joint_7"
+
+  jacobian_damping_lambda: 1.0e-4  # for damped least-squares IK
+
+  v_max: 0.8       # [m/s] max EEF linear speed
+  ang_kp: 4.0
+  ang_w_max: 2.0
+
+
+debug:
+  enable: false
+  debug_every: 20
+  publish_cartesian_twist: false

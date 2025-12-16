@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>mpc</name>
+  <version>0.0.1</version>
+  <description>MPC Controller.</description>
+
+  <maintainer email="dayiethan@gmail.com">iconlab</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <!-- ROS 2 runtime deps -->
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <!-- System Python deps (Ubuntu packages) -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
