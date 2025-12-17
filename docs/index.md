@@ -1,17 +1,50 @@
+[Design](design.md) ·
+[Implementation](implementation.md) ·
+[Results](results.md) ·
+[Conclusion](conclusion.md) ·
+[Team](team.md)
+
 # Real-Time Ball Catching with a Kinova Gen3
 
-## End Goal
-The goal of this project is to catch a thrown ball in real time using a robotic manipulator,
-by integrating perception, prediction, and control into a single closed-loop system.
+This project demonstrates a real-time robotic system that catches a thrown ball
+using RGB-D perception, trajectory prediction, and model predictive control (MPC).
 
-## Why This Is Interesting
-This project requires solving several challenging robotics problems:
-real-time RGB-D perception, noisy state estimation, trajectory prediction under uncertainty,
-and generating dynamically feasible motions within strict latency constraints.
+---
 
-## Real-World Applications
-The techniques developed in this project are applicable to:
-- Dynamic manipulation in industrial automation
-- Human-robot interaction involving object handoff
-- Robotic sports training and assistive robotics
-- Interceptive manipulation tasks in unstructured environments
+## 🔍 Introduction
+
+### End Goal
+The goal of this project is to catch a fast-moving ball in real time using a robotic
+manipulator, by tightly integrating perception, prediction, and control.
+
+### Why This Is Interesting
+This task requires solving several challenging robotics problems:
+- Low-latency RGB-D perception
+- Noisy state estimation and prediction
+- Generating dynamically feasible motions under timing constraints
+
+### Real-World Applications
+- Dynamic manipulation in industrial automation  
+- Human–robot object handoff  
+- Assistive robotics and interceptive manipulation  
+
+---
+
+## 🧠 Project Structure
+- **Design**: System architecture, design criteria, and trade-offs  
+- **Implementation**: Hardware, software, and ROS system details  
+- **Results**: Experimental performance and videos  
+- **Conclusion**: Lessons learned and future improvements  
+
+👉 Use the navigation links above to explore each section.
+
+---
+
+## 📽️ Demo Video
+🎥 *Video link coming soon*
+
+---
+
+## 📌 Course Information
+ME C106A / C206A – Robotics  
+University of California, Berkeley

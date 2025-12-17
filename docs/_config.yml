@@ -1,0 +1,8 @@
+theme: jekyll-theme-cayman
+
+title: Catch Me If You Can
+description: >
+  Real-Time Ball Catching with a Kinova Gen3 Robot<br>
+  ME C106A / C206A Robotics Project · UC Berkeley
+
+show_downloads: false

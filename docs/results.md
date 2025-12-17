@@ -1,10 +1,10 @@
-## Performance
+# Results
+
+## Experimental Performance
 The system was tested over 60 trials, achieving a success rate of 55%.
 
 ## Demonstrations
-- Successful catches from multiple angles
-- Comparison between MPC and non-MPC control
+- Successful catches from multiple launch angles
+- Comparison with non-MPC control
 
-[▶ Demo Video](YouTube 링크)
-
-(사진 & 캡처)
+🎥 *Embedded demo videos*
